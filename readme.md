@@ -11,8 +11,6 @@ Descriptive search needs these because things like "title" don't have a good SEM
 An example would be dark horror anime: titles can be completely unalike in a lot of cases but a synopsis gives us a lot more to work with.
 
 ## Requirements
-Clean dataset with good semantic capabilities for your task.
-
 (Optional) For reference, a fully working version of this project can be found here to reference while coding: https://github.com/kylehoahoang/anime-semantic-search
 
 Please have VSCode installed: https://code.visualstudio.com/
