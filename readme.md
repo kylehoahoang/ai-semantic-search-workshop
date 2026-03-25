@@ -4,6 +4,7 @@
 We are going to build an a vector database that we will use to perform semantic search.
 
 Our dataset requires metadata with something like a synopsis.
+https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset
 
 Descriptive search needs these because things like "title" don't have a good SEMANTIC signal.
 
