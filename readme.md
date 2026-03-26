@@ -57,7 +57,7 @@ st.title("Anime Recommender - Step 1: Load & Prepare Data")
 
 csv_path = st.text_input("Path to CSV", "data/anime.csv")
 ```` 
-5. Run `pip install -r requirements.txt` and `streamlit run app.py` to see what we just made. It should look like the below screenshot![alt text](./images/image-3.png)
+5. Run `pip install -r requirements.txt` and `python -m streamlit run app.py` to see what we just made. It should look like the below screenshot![alt text](./images/image-3.png)
 6. In app.py, create load_csv function:
 ````
 @st.cache_data # Stores result of load_csv into streamlit's cache
@@ -76,7 +76,7 @@ except Exception as e:
   st.exception(e)
 ````
 It should look like this: ![alt text](./images/image-1.png)
-8. Run `streamlit run app.py` to see changes ![alt text](./images/image-4.png)
+8. Run `python -m streamlit run app.py` to see changes ![alt text](./images/image-4.png)
 9. In app.py under the def load_csv function, define normalize_columns function to prep the dataframe for the transformer 
 ````
 def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -136,7 +136,7 @@ try:
 
     st.write("Rows:", len(df2))
 ````
-11. Run `streamlit run app.py` to see changes ![alt text](./images/image-6.png)
+11. Run `python -m streamlit run app.py` to see changes ![alt text](./images/image-6.png)
 12. In app.py under the def normalize_columns function, create functions to get the transformer to embed our text into vectors and to create a chromadb vector database:
 ````
 @st.cache_resource #Caches the embedding model across reruns (the model is heavyweight)
