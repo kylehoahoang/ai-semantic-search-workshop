@@ -20,9 +20,11 @@ https://www.geeksforgeeks.org/python/download-and-install-python-3-latest-versio
 
 Python PIP install: run this for pip after installing python `python -m pip install --upgrade pip`
 
-May need to create a virtual environment try this:
+If you run into a virtual environment error (usually Mac), may need to create a virtual environment try this:
 `python3 -m venv path/to/venv
-    source path/to/venv/bin/activate`
+    source path/to/venv/bin/activate
+    python3 -m pip install --upgrade pip
+    `
 
 ## Dev Notes
 
